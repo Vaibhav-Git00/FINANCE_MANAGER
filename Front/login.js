@@ -11,5 +11,5 @@
 // });
 document.getElementById('loginForm').addEventListener('submit', function(e) {
     e.preventDefault();
-    window.location.href = "/Dashboard/hh.html";
+    window.location.href = "/FINANCE_MANAGER/Dashboard/hh.html";
 });
