@@ -1,0 +1,128 @@
+body {
+    background-color: #f4faff;
+}
+
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+    background-color: #0056b3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav-link i {
+    margin-right: 10px;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #ffcc00;
+    background-color: #004494;
+    border-radius: 5px;
+}
+
+.sidebar img {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
+
+.sidebar-content h5 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-content h6 {
+    color: #ffffff;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.content {
+    background-color: #f4faff;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    background-color: #e9f5ff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.card {
+    background-color: #add8e6;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img {
+    max-width: 80%;
+    height: auto;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.card-details {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-details h3,
+.card-details label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+.card-details input {
+    font-size: 16px;
+    padding: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+h5 {
+    margin-top: 40px;
+}
+
+.navbar {
+    background-color: #f4faff;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .nav-item .nav-link {
+    color: #333;
+}

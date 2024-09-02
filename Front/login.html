@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExpenseEase</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <img src="logo.png" alt="Take Control of Your Money" class="image">
+            <h1>Take Control of <br> <span>Your Money</span></h1>
+            <p>Personal Budgeting is the secret to financial freedom. Start your journey today.</p>
+        </div>
+        <div class="right">
+            <h2><span>Expense</span> <span>Ease</span></h2>
+            <form id="loginForm">
+                <input type="email" id="email" placeholder="<your_email_id>@gmail.com" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <div>
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                    <br><br>
+                </div>
+                <a href="/Dashboard/hh.html">
+                    <button type="submit">Sign In</button>
+                </a>
+            </form>
+            <br><br>
+            <p>New user? <a href="#">Sign Up</a></p>
+            <p class="or-line">------------- or -------------</p>
+            <div class="social-login">
+                <button id="googleLogin">Google</button>
+                <button id="linkedInLogin">LinkedIn</button>
+                <button id="metaLogin">Meta</button>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

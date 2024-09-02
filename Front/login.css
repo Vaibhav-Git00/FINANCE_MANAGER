@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #3498db;
+}
+
+.container {
+    display: flex;
+    max-width: 1400px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left, .right {
+    padding: 165px;
+    flex: 1;
+}
+
+.left {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+}
+
+.left img {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.left h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.left h1 span {
+    font-weight: bold;
+    color: #000;
+}
+
+.left p {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #000;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+.right-panel h2 span:first-child {
+    color: #000;
+}
+
+.right-panel h2 span:last-child {
+    color: #3498db;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 20px; /* Increase padding to make the button larger */
+    border: none;
+    background-color: #1e90ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em; /* Increase font size for larger text */
+    width: 100%; /* Optional: Make the button full-width */
+}
+
+button:hover {
+    background-color: #0b7dda;
+}
+
+
+.or-line {
+    margin: 20px 0;
+    font-size: 1em;
+    color: #666;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.social-login button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    flex: 1;
+    margin: 0 5px;
+}
+
+#googleLogin { background-color: #db4437; color: #fff; }
+#linkedInLogin { background-color: #0077b5; color: #fff; }
+#metaLogin { background-color: #1877f2; color: #fff; }
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left, .right {
+        padding: 20px;
+    }
+
+    .left img {
+        width: 80px;
+    }
+
+    .left h1 {
+        font-size: 2em;
+    }
+
+    .right h2 {
+        font-size: 1.5em;
+    }
+
+    input[type="email"], input[type="password"], button, .social-login button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .social-login {
+        flex-direction: column;
+    }
+
+    .social-login button {
+        margin-bottom: 10px;
+    }
+}

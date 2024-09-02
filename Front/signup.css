@@ -1,0 +1,270 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    width: 75%;
+}
+
+.left-panel {
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.left-panel img {
+    margin-bottom: 20px;
+}
+
+.left-panel h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.left-panel p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+    font: bold;
+}
+
+.right-panel {
+    padding: 40px;
+    width: 50%;
+}
+
+.right-panel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right-panel h2 span:first-child {
+    color: #000;
+}
+
+.right-panel h2 span:last-child {
+    color: #3498db;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+.checkbox-group label {
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.separator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.separator hr {
+    width: 40%;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+.separator span {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.social-buttons button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons button:hover {
+    background-color: #f7f7f7;
+}
+
+.social-buttons i {
+    margin-right: 10px;
+}
+
+.social-buttons button:first-child {
+    background-color: #df4a32;
+    color: #fff;
+}
+
+.social-buttons button:first-child:hover {
+    background-color: #e4652e;
+}
+
+.social-buttons button:nth-child(2) {
+    background-color: #0072b1;
+    color: #fff;
+}
+
+.social-buttons button:nth-child(2):hover {
+    background-color: #0069a5;
+}
+
+.social-buttons button:last-child {
+    background-color: #4267b2;
+    color: #fff;
+}
+
+.social-buttons button:last-child:hover {
+    background-color: #3a5a99;
+}
+
+/* Responsive styles */
+
+/* Medium screen size (768px - 1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .left-panel {
+        width: 40%;
+    }
+
+    .right-panel {
+        width: 60%;
+    }
+}
+
+/* Small screen size (480px - 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .left-panel {
+        width: 30%;
+    }
+
+    .right-panel {
+        width: 70%;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+/* Extra small screen size (320px - 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 98%;
+        flex-direction: column;
+    }
+
+    .left-panel {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .right-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .input-group input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+    }
+
+    .social-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
