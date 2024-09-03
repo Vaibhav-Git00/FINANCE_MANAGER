@@ -38,12 +38,17 @@ body {
     text-align: center;
 }
 
+/* Specific styling for "Take Control of Your Money" */
+.left-panel h1:first-of-type {
+    color: white; /* Change the color to white */
+}
+
 .left-panel p {
     font-size: 16px;
     margin-bottom: 20px;
     text-align: center;
-    color: #000;
-    font: bold;
+    color: black; /* Ensure the paragraph text is black */
+    font-weight: 500;
 }
 
 .right-panel {

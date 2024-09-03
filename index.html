@@ -15,44 +15,47 @@
             <img src="/FINANCE_MANAGER/Front/logo.png"
                 alt="Illustration of a person in a suit with a briefcase and a checklist" height="200" width="200">
             <h1>Take Control of <br> Your Money</h1>
-            <p>Personal Budgeting is the secret to financial freedom. Start your journey today.</p>
+            <h1>Personal Budgeting is the secret to financial freedom. Start your journey today.</h1>
         </div>
         <div class="right-panel">
             <h2><span>Expense</span> <span>Ease</span></h2>
-            <form id="signup-form">
+            <form id="signup-form" action="/FINANCE_MANAGER/Front/signup_process.php" method="post">
                 <div class="input-group">
-                    <input type="text" placeholder="First name" name="first_name" id="first_name">
-                    <input type="text" placeholder="Last name" name="last_name" id="last_name">
+                    <input type="text" placeholder="First name" name="first_name" id="first_name" required>
+                    <input type="text" placeholder="Last name" name="last_name" id="last_name" required>
                 </div>
                 <div class="input-group">
-                    <input type="date" placeholder="Date of Birth" name="dob" id="dob">
-                    <input type="tel" placeholder="Phone number" name="phone" id="phone">
+                    <input type="date" placeholder="Date of Birth" name="dob" id="dob" required>
+                    <input type="tel" placeholder="Phone number" name="phone" id="phone" required>
                 </div>
                 <div class="input-group">
-                    <input type="email" placeholder="your_email_id@gmail.com" name="email" id="email">
-                    <input type="password" placeholder="Enter your password" name="password" id="password">
+                    <input type="email" placeholder="your_email_id@gmail.com" name="email" id="email" required>
+                    <input type="password" placeholder="Enter your password" name="password" id="password" required>
                 </div>
                 <div class="input-group">
-                    <input type="password" placeholder="Confirm your password" name="confirm_password"
-                        id="confirm_password">
+                    <input type="password" placeholder="Confirm your password" name="confirm_password" id="confirm_password" required>
                 </div>
                 <div class="checkbox-group">
-                    <input type="checkbox" id="terms" name="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
                     <label for="terms">I agree to the terms and conditions</label>
                 </div>
-                <button type="submit">Create Account</button>
+
+                <a href="/FINANCE_MANAGER/Front/login.html">
+                    <button type="submit">Create Account</button>
+                </a>
+                
             </form>
             <div class="footer">
-                <p>New user? <a href="/FINANCE_MANAGER/Front/login.html">Sign In</a></p>
+                <p>Already a user? <a href="/FINANCE_MANAGER/Front/login.html" class="button-link">Sign In</a></p>
                 <div class="separator">
                     <hr>
                     <span>OR</span>
                     <hr>
                 </div>
                 <div class="social-buttons">
-                    <button><i class="fab fa-google"></i> Google</button>
-                    <button><i class="fab fa-linkedin"></i> LinkedIn</button>
-                    <button><i class="fab fa-facebook"></i> Meta</button>
+                    <button type="button"><i class="fab fa-google"></i> Google</button>
+                    <button type="button"><i class="fab fa-linkedin"></i> LinkedIn</button>
+                    <button type="button"><i class="fab fa-facebook"></i> Meta</button>
                 </div>
             </div>
         </div>
