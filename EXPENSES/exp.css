@@ -1,0 +1,142 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #1a73e8;
+    color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+header .user {
+    display: flex;
+    align-items: center;
+}
+
+header .user span {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+header .notification-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: #fff;
+    padding: 30px 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    padding: 15px 0;
+    font-size: 18px;
+    color: #1a73e8;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    color: #0056b3;
+}
+
+main {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.category:hover {
+    transform: translateY(-5px);
+}
+
+.category h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #1a73e8;
+}
+
+.category input[type="text"],
+.category input[type="date"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.category button {
+    padding: 12px;
+    width: 100%;
+    background-color: #1a73e8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.category button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header, .sidebar, main {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .sidebar {
+        position: relative;
+        padding: 10px;
+        height: auto;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
