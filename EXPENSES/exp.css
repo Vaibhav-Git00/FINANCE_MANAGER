@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -50,7 +49,40 @@ header .notification-icon {
     top: 0;
     left: 0;
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: transform 0.3s ease;
 }
+.sidebar .dashboard-icon {
+    display: block;
+    margin: 0 auto 10px; 
+    width: 180px; 
+    height: auto; 
+}
+.sidebar ul li a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    width: 100%;
+    height: 100%;
+    padding: 15px 0; 
+}
+
+.sidebar ul li {
+    list-style: none;
+    font-size: 18px;
+    color: #1a73e8;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li:hover {
+    color: #0056b3; 
+}
+
+.sidebar ul li a:hover {
+    color: #0056b3; 
+}
+
 
 .sidebar ul {
     list-style: none;
@@ -71,6 +103,7 @@ header .notification-icon {
 main {
     margin-left: 250px;
     padding: 20px;
+    transition: margin-left 0.3s ease;
 }
 
 .content {
@@ -123,7 +156,25 @@ main {
     background-color: #0056b3;
 }
 
-/* Responsive Design */
+
+@media (max-width: 1024px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
 @media (max-width: 768px) {
     header, .sidebar, main {
         width: 100%;
@@ -138,5 +189,32 @@ main {
 
     .content {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    .sidebar {
+        padding: 10px;
+    }
+
+    .category h2 {
+        font-size: 18px;
+    }
+
+    .category input[type="text"],
+    .category input[type="date"] {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .category button {
+        padding: 10px;
+        font-size: 14px;
     }
 }
